@@ -1,0 +1,32 @@
+[
+  {
+    "articleStyle": 0,
+    "cacheFirst": false,
+    "customOrder": 1156,
+    "enableJs": true,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1\",\n  \"referer\": \"https://6637.h55e.com/\"\n}",
+    "injectJs": "(function(){\n  function hide(){\n    var s='.home_menu,.rightlistwrap,.comment,.adv,#loginbox,.operate,.mui-scroll-wrapper,.vbadv,.ulist_loading,.ulist_tip';\n    document.querySelectorAll(s).forEach(function(e){e.style.display='none';});\n    var ck=document.getElementById('ckplays1');\n    if(ck){ck.style.cssText='position:fixed;top:0;left:0;width:100vw;height:100vh;margin:0;z-index:1;background:#000;';}\n    var vi=document.querySelector('.video_info'); if(vi){vi.style.zIndex='5';}\n    document.documentElement.style.overflow='hidden';\n    document.body.style.overflow='hidden';\n    document.body.style.background='#000';\n  }\n  hide();\n  var t=setInterval(hide,600);\n  setTimeout(function(){clearInterval(t);},12000);\n  setTimeout(function(){\n    var v=document.querySelector('#ckplays1 video');\n    if(v){v.muted=true;var p=v.play();if(p&&p.catch){p.catch(function(){});}}\n  },1500);\n})();",
+    "lastUpdateTime": 0,
+    "loadWithBaseUrl": true,
+    "preload": false,
+    "ruleArticles": "@js:\nvar OUT = [];\nOUT.push('<div class=\"video-item\"><a href=\"https://6637.h55e.com/douyin/douyin.html?t=1\"><img data-src=\"\" alt=\"🎬 抖音沉浸流 · 点此进入\"></a></div>');\nresult = OUT;",
+    "ruleContent": "<js>\nresult = result;\n</js>",
+    "ruleImage": "{{@@img@data-src}}",
+    "ruleLink": "{{@@a.0@href}}",
+    "ruleNextPage": "page",
+    "rulePubDate": "",
+    "ruleTitle": "@js:\nvar t = `{{@@img@alt}}`;\nresult = (t && t.trim()) ? t : '抖音沉浸流';",
+    "showWebLog": false,
+    "singleUrl": false,
+    "sortUrl": "抖音·沉浸::/douyin/douyin.html?t=1\n热门::/douyin/douyin.html?t=1\n专题::/douyin/douyin.html?t=1\n搜索::/douyin/douyin.html?t=1",
+    "sourceComment": "【h55e·抖音菜单短视频·2026-09-17】\n- 站点 6637.h55e.com 自带抖音式竖滑 SPA（Swiper+DPlayer+hls），后端 ashx：POST /douyin/douyin622web.ashx（action=gettiktokvideosh5 等），视频直链 xl1+vurl 为明文 m3u8，无需解密。\n- 本源策略：ruleContent 原样返回 douyin.html 整页，由 阅读 WebView 跑站点自带 JS 渲染竖滑流；injectJs 隐藏顶栏/侧栏/评论/广告/登录框并全屏化播放器。\n- 沙箱 WAF 拦 ashx 直连（返回空），故未做 API 直采；真机走 WebView 浏览器上下文可正常加载。\n- 红线：仅「全部是幼」类目屏蔽；本站类目由 SPA 自带，源内不硬编码类目，故无预筛。",
+    "sourceGroup": "0 自改",
+    "sourceIcon": "https://cdn.sshs.rip/d0/df/d01dca8fdf5ffdf82c96203b73aa4ddf.webp",
+    "sourceName": "🌈抖音短视频·h55e",
+    "sourceUrl": "https://6637.h55e.com/douyin/douyin.html?t=1",
+    "style": "html,body{margin:0;padding:0;width:100%;height:100%;background:#000;overflow:hidden;}\n*.home_menu,*.rightlistwrap,*.comment,*.adv,#loginbox,*.operate,*.mui-scroll-wrapper{display:none!important;}\n#ckplays1{position:fixed;top:0;left:0;width:100vw;height:100vh;margin:0;background:#000;}\nvideo{background:#000;}",
+    "type": 0
+  }
+]
