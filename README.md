@@ -31,7 +31,7 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
   15. 玉羞园.json（玉羞园 自改）
   16. 绿色小导航.json（绿色小导航 🥝自改）
   17. onlyscroll.json（OnlyScroll沉浸流 🥝自改）
-  18. swipefap.json（swipefap沉浸流 🥝自改）
+  18. ogfap.json（ogfap沉浸流 🥝自改）
 
 ## 单源备份（兜底）
 
