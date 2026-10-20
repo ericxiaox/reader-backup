@@ -4,7 +4,7 @@
 
 ## 一键整合包（推荐）
 
-`all.json` = 全部 18 个阅读源的合集，**一次网络导入全部源**：
+`all.json` = 全部 19 个阅读源的合集，**一次网络导入全部源**：
 
 ```
 https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
@@ -32,6 +32,7 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
   16. 绿色小导航.json（🏛社区·绿色小导航）
   17. onlyscroll.json（📱沉浸·OnlyScroll）
   18. shortsxxx.json（📱沉浸·Shorts）
+  19. douyin18one.json（📱沉浸·抖音）
 
 ## 单源备份（兜底）
 
