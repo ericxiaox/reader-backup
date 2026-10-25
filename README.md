@@ -34,14 +34,39 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
   18. shortsxxx.json（📱沉浸·Shorts）
   19. douyin18one.json（📱沉浸·抖音）
 
-## 单源备份（兜底）
+## 单源链接（每个源一个文件）
 
-- `h55e抖音.json` / `抖阴18.json` / `色花堂.json` —— 个别源的单独备份，合集导入失败时可逐源导入。
-- 全部源的主下发区在 gitee：`https://gitee.com/mallox/source/raw/master/reader/<名>.json`
+本仓同时存放全部 19 个源的**单文件**，可直接粘贴发送给别人、或在阅读 App 里网络导入：
+
+```
+https://raw.githubusercontent.com/ericxiaox/reader-backup/main/<文件名>.json
+```
+
+单文件清单（与合集顺序一致）：
+
+  1. `h55e抖音.json`
+  2. `抖阴18.json`
+  3. `色花堂.json`
+  4. `黄果短剧.json`
+  5. `集芳阁.json`
+  6. `黑料不打烊.json`
+  7. `黑料网.json`
+  8. `51吃瓜.json`
+  9. `51暗网.json`
+  10. `91爆料.json`
+  11. `91蚪阴.json`
+  12. `抖阴.json`
+  13. `无限臀山.json`
+  14. `每日大赛.json`
+  15. `玉羞园.json`
+  16. `绿色小导航.json`
+  17. `onlyscroll.json`
+  18. `shortsxxx.json`
+  19. `douyin18one.json`
 
 ## 说明
 
 - 本仓为纯 CDN 备份，GitHub 不扫描订阅源内容（gitee 的合集 all.json 实测会被合规扫描拦成 451，故合集只放这里）。
-- 更新流程：改完本地编辑点（`源文件和本地包/阅读订阅源/`）后，跑 `python tools/make_github_all.py --push` 一键重生成并推送合集。
+- 更新流程：改完本地编辑点（`源文件和本地包/阅读订阅源/`）后，跑 `python tools/make_github_all.py --push` 一键重生成并推送合集与全部单源。
 - 换域只需改各源 `sourceUrl` 一处（规则已加固为 baseUrl 派生），然后重跑上述脚本。
 - 本站三件套（发布页 / 邮箱 / 梯子网址）与判活逻辑见影视仓技能书 `references/共用/02`、`共用/03`。
