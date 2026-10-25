@@ -1,0 +1,30 @@
+[
+  {
+    "articleStyle": 0,
+    "cacheFirst": false,
+    "customOrder": 0,
+    "enableJs": true,
+    "enabled": true,
+    "enabledCookieJar": true,
+    "header": "{\"User-Agent\": \"Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 Chrome/120 Mobile Safari/537.36\"}",
+    "lastUpdateTime": 1792925732401,
+    "loadWithBaseUrl": true,
+    "preload": false,
+    "ruleArticles": "article.post-item",
+    "ruleContent": "@js:\n/* 站址自动推导：优先取引擎传入的当前页 URL（换域后自动跟随），取不到才回落。 */\nvar B = (function () {\n  var u = (typeof baseUrl !== 'undefined' && baseUrl) ? String(baseUrl) : '';\n  var m = u.match(/^https?:\\/\\/[^\\/]+/);\n  return m ? m[0] : 'https://www.photo13.com';\n})();\nvar CSS = '<style>img{max-width:100%;height:auto;display:block;margin:8px auto}</style>';\nvar h = String(result == null ? '' : result);\n/* 抓一页 HTML 里的图床直链（src= 前必须是空白，避免误抓 data-src 占位） */\nfunction pick(html) {\n  var out = [];\n  var re = /\\ssrc=\"(https?:\\/\\/img[^\"']+\\.(?:jpg|jpeg|png|webp))\"/gi;\n  var m;\n  while ((m = re.exec(html))) { if (out.indexOf(m[1]) < 0) out.push(m[1]); }\n  return out;\n}\nvar list = pick(h);\n/* WordPress nextpage 分页（/m/{id}/{n}，每页约 10 张）：逐页抓齐，上限 30 页 */\nvar urls = [];\nvar re2 = /<a[^>]*class=\"post-page-numbers\"[^>]*>/g;\nvar m2;\nwhile ((m2 = re2.exec(h))) {\n  var hu = m2[0].match(/href=\"([^\"]+)\"/);\n  if (hu && urls.indexOf(hu[1]) < 0) urls.push(hu[1]);\n}\nif (urls.length > 30) urls = urls.slice(0, 30);\nfor (var i = 0; i < urls.length; i++) {\n  try {\n    var t = String(java.ajax(urls[i]) || '');\n    if (t.length > 1000) {\n      var b = pick(t);\n      for (var j = 0; j < b.length; j++) { if (list.indexOf(b[j]) < 0) list.push(b[j]); }\n    }\n  } catch (e) {}\n}\nvar out = CSS;\nfor (var k = 0; k < list.length; k++) { out += '<img src=\"' + list[k] + '\"/>'; }\nout;",
+    "ruleImage": "a.media-img@data-bg",
+    "ruleLink": "h2.entry-title a@href",
+    "ruleNextPage": "a.page-next@href",
+    "ruleTitle": "h2.entry-title a@text",
+    "showWebLog": false,
+    "singleUrl": false,
+    "sortUrl": "搜索::/search/{{source.getVariable()}}/ | 秀人网::/pictures | 秀人网·主站::/pictures/xiuren | 秀人网·语画界::/pictures/yuhua | 秀人网·花漾::/pictures/huayang | 秀人网·星颜社::/pictures/xingyan | 秀人网·嗲囡囡::/pictures/feilin | 秀人网·爱蜜社::/pictures/imiss | 秀人网·波萝社::/pictures/bololi | 秀人网·尤物馆::/pictures/youwu | 秀人网·优星馆::/pictures/uxing | 秀人网·影私荟::/pictures/wings | 秀人网·星乐园::/pictures/leyuan | 秀人网·蜜桃社::/pictures/miitao | 秀人网·美媛馆::/pictures/mygirl | 秀人网·顽味生活::/pictures/taste | 秀人网·魅妍社::/pictures/mistar | 秀人网·糖果画报::/pictures/candy | 秀人网·花の颜::/pictures/huayan | 秀人网·模范学院::/pictures/mofan | 中国::/china | 中国·艺图语::/china/pure | 中国·小清纯::/china/pures | 中国·雅拉伊::/china/yalayi | 中国·推女神::/china/tgod | 中国·爱尤物::/china/ugirls | 中国·头条女神::/china/toutiao | 中国·尤果网::/china/ugirls-china | 中国·推女郎::/china/tuigirl | 中国·蜜丝::/china/missleg | 中国·果团网::/china/girlt | 中国·尤蜜荟::/china/youmi | 中国·网红馆::/china/candy-china | 中国·喵糖映画::/china/mtcos | 中国·尤美::/china/youmei | 中国·御女郎::/china/dkgirl | 中国·瑞丝馆::/china/ruisg | 中国·激萌文化::/china/kimoe | 中国·青豆客::/china/qingdouke | 中国·猎女神::/china/slady | 中国·克拉女神::/china/kelagirls | 中国·尤蜜::/china/youmiabc | 中国·宅急约::/china/wordgirls | 中国·轰趴猫::/china/partycat | 中国·潘多拉::/china/pdl",
+    "sourceComment": "【2026-10-25 建源·由 OK 影视 py 源改写】\n· 站点：WordPress RiPro v5 图集站（photo13.com）；无登录墙、无年龄门（列表/详情/分页页均 200 直读）\n· 分类：秀人网 18 子类＋中国 24 子类（站点导航实测；/pictures 为混合流、/pictures/xiuren 为秀人网主站）\n· 图集分页：WordPress nextpage（/m/{id}/{n}，每页约 10 张，80P≈8 页）；ruleContent 跨页抓全图（java.ajax 逐页，上限 30 页）\n· 图床：img-h.cdnimg.vip，实测无 Referer 要求（裸请求 200）\n· 列表：article.post-item 卡片；封面 a.media-img@data-bg（懒加载属性）；标题 h2.entry-title a；翻页 a.page-next@href（class=\"page-link page-next\"，在 a 上不在 li 上；绝对 URL）\n· 换域：链接均为绝对 URL 或 baseUrl 派生，换域只改 sourceUrl 一处",
+    "sourceGroup": "0 自改",
+    "sourceIcon": "https://raw.githubusercontent.com/ericxiaox/reader-backup/main/icons/tuji.png",
+    "sourceName": "📷图集·写真馆",
+    "sourceUrl": "https://www.photo13.com/",
+    "style": "body,p{font-size:18px;line-height:1.8}img{max-width:100%;height:auto;display:block;margin:12px auto}",
+    "type": 0
+  }
+]
