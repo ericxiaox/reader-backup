@@ -4,7 +4,7 @@
 
 ## 一键整合包（推荐）
 
-`all.json` = 全部 20 个阅读源的合集，**一次网络导入全部源**：
+`all.json` = 全部 21 个阅读源的合集，**一次网络导入全部源**：
 
 ```
 https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
@@ -34,10 +34,11 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
   18. shortsxxx.json（📱沉浸·Shorts）
   19. douyin18one.json（📱沉浸·抖音）
   20. 写真馆.json（📷图集·写真馆）
+  21. 91热爆短视频.json（📱沉浸·热爆短视频）
 
 ## 单源链接（每个源一个文件）
 
-本仓同时存放全部 20 个源的**单文件**，可直接粘贴发送给别人、或在阅读 App 里网络导入：
+本仓同时存放全部 21 个源的**单文件**，可直接粘贴发送给别人、或在阅读 App 里网络导入：
 
 ```
 https://raw.githubusercontent.com/ericxiaox/reader-backup/main/<文件名>.json
@@ -65,6 +66,7 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/<文件名>.json
   18. `shortsxxx.json`
   19. `douyin18one.json`
   20. `写真馆.json`
+  21. `91热爆短视频.json`
 
 ## 说明
 
