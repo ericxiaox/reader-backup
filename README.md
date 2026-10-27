@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
 合集内容（按此顺序）：
 
   1. h55e抖音.json（📱沉浸·抖音菜单）
-  2. 抖阴18.json（🎬换源·抖阴18）
+  2. 抖阴18.json（🎬视频·抖阴18）
   3. 色花堂.json（🏛社区·色花堂）
   4. 黄果短剧.json（🏛社区·黄果短剧）
   5. 集芳阁.json（🏛社区·集芳阁）
@@ -25,10 +25,10 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
   9. 51暗网.json（🍉黑料·51暗网）
   10. 91爆料.json（🍉黑料·91爆料）
   11. 91蚪阴.json（📱沉浸·91蚪阴）
-  12. 抖阴.json（🎬换源·抖阴）
-  13. 无限臀山.json（🎬换源·无限臀山）
+  12. 抖阴.json（🎬视频·抖阴）
+  13. 无限臀山.json（🎬视频·无限臀山）
   14. 每日大赛.json（🍉黑料·每日大赛）
-  15. 玉羞园.json（🎬换源·玉羞园）
+  15. 玉羞园.json（🎬视频·玉羞园）
   16. 绿色小导航.json（🏛社区·绿色小导航）
   17. onlyscroll.json（📱沉浸·OnlyScroll）
   18. shortsxxx.json（📱沉浸·Shorts）
