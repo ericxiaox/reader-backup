@@ -44,29 +44,51 @@ https://raw.githubusercontent.com/ericxiaox/reader-backup/main/all.json
 https://raw.githubusercontent.com/ericxiaox/reader-backup/main/<文件名>.json
 ```
 
-单文件清单（与合集顺序一致）：
+⚠ 文件名含中文时**必须 percent-encode**，直接粘中文名 GitHub raw 会回 400 Bad request。
+下面的链接已经编码好，**直接复制整条**即可：
 
-  1. `h55e抖音.json`
-  2. `抖阴18.json`
-  3. `色花堂.json`
-  4. `黄果短剧.json`
-  5. `集芳阁.json`
-  6. `黑料不打烊.json`
-  7. `黑料网.json`
-  8. `51吃瓜.json`
-  9. `51暗网.json`
-  10. `91爆料.json`
-  11. `91蚪阴.json`
-  12. `抖阴.json`
-  13. `无限臀山.json`
-  14. `每日大赛.json`
-  15. `玉羞园.json`
-  16. `绿色小导航.json`
-  17. `onlyscroll.json`
-  18. `shortsxxx.json`
-  19. `douyin18one.json`
-  20. `写真馆.json`
-  21. `91热爆短视频.json`
+  1. h55e抖音.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/h55e%E6%8A%96%E9%9F%B3.json
+  2. 抖阴18.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E6%8A%96%E9%98%B418.json
+  3. 色花堂.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E8%89%B2%E8%8A%B1%E5%A0%82.json
+  4. 黄果短剧.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E9%BB%84%E6%9E%9C%E7%9F%AD%E5%89%A7.json
+  5. 集芳阁.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E9%9B%86%E8%8A%B3%E9%98%81.json
+  6. 黑料不打烊.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E9%BB%91%E6%96%99%E4%B8%8D%E6%89%93%E7%83%8A.json
+  7. 黑料网.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E9%BB%91%E6%96%99%E7%BD%91.json
+  8. 51吃瓜.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/51%E5%90%83%E7%93%9C.json
+  9. 51暗网.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/51%E6%9A%97%E7%BD%91.json
+  10. 91爆料.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/91%E7%88%86%E6%96%99.json
+  11. 91蚪阴.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/91%E8%9A%AA%E9%98%B4.json
+  12. 抖阴.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E6%8A%96%E9%98%B4.json
+  13. 无限臀山.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E6%97%A0%E9%99%90%E8%87%80%E5%B1%B1.json
+  14. 每日大赛.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E6%AF%8F%E6%97%A5%E5%A4%A7%E8%B5%9B.json
+  15. 玉羞园.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E7%8E%89%E7%BE%9E%E5%9B%AD.json
+  16. 绿色小导航.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E7%BB%BF%E8%89%B2%E5%B0%8F%E5%AF%BC%E8%88%AA.json
+  17. onlyscroll.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/onlyscroll.json
+  18. shortsxxx.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/shortsxxx.json
+  19. douyin18one.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/douyin18one.json
+  20. 写真馆.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/%E5%86%99%E7%9C%9F%E9%A6%86.json
+  21. 91热爆短视频.json
+     https://raw.githubusercontent.com/ericxiaox/reader-backup/main/91%E7%83%AD%E7%88%86%E7%9F%AD%E8%A7%86%E9%A2%91.json
 
 ## 说明
 
