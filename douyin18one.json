@@ -21,6 +21,7 @@
     "sourceIcon": "https://raw.githubusercontent.com/ericxiaox/reader-backup/main/icons/chenjinliu.png",
     "sourceName": "📱沉浸·抖音",
     "sourceUrl": "https://douyin18.one/#xzq",
-    "type": 0
+    "type": 0,
+    "customOrder": 8
   }
 ]
