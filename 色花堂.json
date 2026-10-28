@@ -3,7 +3,7 @@
     "articleStyle": 0,
     "cacheFirst": false,
     "coverDecodeJs": "",
-    "customOrder": 900,
+    "customOrder": 20,
     "enableJs": true,
     "enabled": true,
     "enabledCookieJar": true,
