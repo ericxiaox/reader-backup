@@ -2,7 +2,7 @@
   {
     "articleStyle": 1,
     "cacheFirst": false,
-    "customOrder": 5,
+    "customOrder": 15,
     "enableJs": true,
     "enabled": true,
     "enabledCookieJar": true,
