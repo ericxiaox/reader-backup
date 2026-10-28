@@ -21,6 +21,7 @@
     "sourceIcon": "https://raw.githubusercontent.com/ericxiaox/reader-backup/main/icons/chenjinliu.png",
     "sourceName": "📱沉浸·Shorts",
     "sourceUrl": "https://www.shorts.xxx/#xzq",
-    "type": 0
+    "type": 0,
+    "customOrder": 10
   }
 ]
