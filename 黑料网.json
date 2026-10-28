@@ -3,7 +3,7 @@
     "articleStyle": 1,
     "cacheFirst": false,
     "coverDecodeJs": "/\\/(new|xiao|upload)\\//.test(src)?java.createSymmetricCrypto(\"AES/CBC/Pkcs7Padding\", \"f5d965df75336270\",\"97b60394abc2fbe1\").decrypt(result):result",
-    "customOrder": 1602,
+    "customOrder": 6,
     "enableJs": true,
     "enabled": true,
     "enabledCookieJar": true,
