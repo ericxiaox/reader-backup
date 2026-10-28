@@ -24,6 +24,7 @@
     "sourceUrl": "https://xn--m-3h9b.lvse71.date/%E9%A3%8E%E6%99%AF/#xzq",
     "style": ".nav-it a{display:block;padding:14px 16px;font-size:16px;color:#eee;text-decoration:none;border-bottom:1px solid #222}\nbody{background:#111}",
     "type": 0,
-    "bookSourceComment": "\n【去广告 v1.1（2026-09-06）】\n- 手段：iframe sandbox 白名单 allow-scripts/same-origin/forms/top-navigation-by-user-activation\n- 效果：禁弹窗(window.open)、禁新窗口(target=_blank)、禁自动顶层劫持跳转（用户手势的顶层跳转仍放行）\n- 边界：iframe 跨域内容内嵌横幅/信息流广告 DOM 无法删除（同源策略），要真去广告需对该站做乙方案深度解析\n- 壳页 origin=导航站、iframe=第三方站，跨域下 sandbox 不可被站点自行移除，拦截有效"
+    "bookSourceComment": "\n【去广告 v1.1（2026-09-06）】\n- 手段：iframe sandbox 白名单 allow-scripts/same-origin/forms/top-navigation-by-user-activation\n- 效果：禁弹窗(window.open)、禁新窗口(target=_blank)、禁自动顶层劫持跳转（用户手势的顶层跳转仍放行）\n- 边界：iframe 跨域内容内嵌横幅/信息流广告 DOM 无法删除（同源策略），要真去广告需对该站做乙方案深度解析\n- 壳页 origin=导航站、iframe=第三方站，跨域下 sandbox 不可被站点自行移除，拦截有效",
+    "customOrder": 19
   }
 ]
